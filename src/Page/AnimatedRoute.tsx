@@ -6,13 +6,7 @@ function AnimatedRoute() {
   const location = useLocation();
 
   const PageNotFound = (
-    <motion.h3
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 1 }}
-      className="PageNotFound"
-    >
+    <motion.h3 initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} transition={{ duration: 1 }} className="PageNotFound">
       Page Not found <code className="notfound"> 404</code>
     </motion.h3>
   );
@@ -21,9 +15,9 @@ function AnimatedRoute() {
     <Routes location={location} key={location.pathname}>
       <Route
         path="/"
-        element={
+        element={ 
           <h2>
-            Helloe in home <span>Page</span>
+            Helloe in home !! <span>Page</span>
           </h2>
         }
       />
