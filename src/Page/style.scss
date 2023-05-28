@@ -1,0 +1,16 @@
+body {
+    overflow: hidden;
+}
+
+.notfound {
+    padding-left: 1rem;
+}
+
+.PageNotFound {
+    color: 'red';
+    display: 'flex';
+    alignItems: "center";
+    fontSize: '2rem';
+    justifyContent: 'center';
+    height: '100vh'
+}
