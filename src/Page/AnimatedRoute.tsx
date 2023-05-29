@@ -11,16 +11,16 @@ function AnimatedRoute() {
     </motion.h3>
   );
 
+  const HomePage = (
+    <h2>
+      Helloe in home !! <span>Page</span>
+    </h2>
+  );
+
+  
   return (
     <Routes location={location} key={location.pathname}>
-      <Route
-        path="/"
-        element={ 
-          <h2>
-            Helloe in home !! <span>Page</span>
-          </h2>
-        }
-      />
+      <Route path="/" element={HomePage} />
       <Route path="/about" element={<h2>Helloe about</h2>} />
       <Route path="*" element={PageNotFound} />
     </Routes>
